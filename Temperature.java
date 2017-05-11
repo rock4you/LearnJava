@@ -1,5 +1,5 @@
 import java.util.*;
-
+//convert a int Fahrenheit to Centigrade
 public class Temperature
 {
 	public static void main(String[] args)
