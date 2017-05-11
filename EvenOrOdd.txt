@@ -1,0 +1,36 @@
+import java.util.*;
+// judge whether the num is even or odd
+
+public class EvenOrOdd {
+	public static void main(String[] args)
+	{
+		@SuppressWarnings("resource")
+		Scanner in = new Scanner(System.in);
+		String str = in.nextLine();
+		String[] arr = str.split(" ");
+		
+		int i=0;
+		int temp = 0;
+		int oddnum=0, evennum=0;
+		while( true )
+		{
+			try{
+				temp=Integer.parseInt(arr[i]);
+				}
+			catch(NumberFormatException e){
+				break;
+				}
+			if (temp==-1)
+				break;
+			if(temp%2==0)
+				oddnum+=1;
+			else
+				evennum+=1;
+			i++;
+		}
+		
+		System.out.print(evennum);
+		System.out.print(" ");
+		System.out.print(oddnum);
+	}
+}
