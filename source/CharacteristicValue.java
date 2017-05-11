@@ -38,5 +38,4 @@ public class CharacteristicValue {
 		}	
 		System.out.print(result);
 	}
-	
 }
